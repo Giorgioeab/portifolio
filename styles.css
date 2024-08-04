@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    color: white;
+}
+
 :root {
     --primary-color: rgba(0, 0, 0, 0.6)
 }
@@ -93,8 +97,8 @@
     color: white;
     line-height: 2rem;
     text-align: justify;
-    
 }
+
 /* SKILLS */
 .skills-content {
     margin-top: 108px;
@@ -201,6 +205,36 @@
     text-align: right;
 }
 
+/* Form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form .form-input {
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.social-items a {
+    margin-right: 30px;
+    color:rgba(255, 255, 255, 0.5);
+    text-decoration:none;
+}
+
 
 
     /* Utilities*/
@@ -228,4 +262,31 @@
     text-align: center;
     width: fit-content;
     margin: auto;
+}
+
+.form-input {
+    border: none;
+    border-radius: 10px;
+    background-color: #202020;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    resize: none;
+}
+
+.form-input:focus {
+    outline: 1px solid rgba(255, 255, 255, 0.5);;
+}
+
+.form-button {
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: uppercase;
+    font-weight: 600;
+}
+
+.form-button:hover {
+    cursor: pointer;
 }
