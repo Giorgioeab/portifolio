@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -12,20 +13,21 @@
 </head>
 <body>
     <nav class="navbar-container">
-        <ul>
-            <li>Inicio</li>
-            <li>Sobre</li>
-            <li>Habilidades</li>
-            <li>Projetos</li>
-            <li>Contato</li>
-        </ul>
+        <input type="checkbox" id="toggle">
+        <label for="toggle">&#9776;</label>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mim">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
     </nav>
-    <div class="showcase-container">
-        <h1>Oi, eu sou o Giórgio Almeida</h1>
-        <p>A Professional web Developer</p>
+    <div class="showcase-container" id="inicio">
+        <h1>Oi, eu sou o <br />
+            Giórgio Almeida</h1>
+        <p>A Professional <br><span class="showcase-highlight">Fullstack</span> Developer</p>
     </div>
-    <!-- about me -->
-    <div class="section-container">
+    <div class="section-container" id="sobre-mim">
         <div class="section-content">
             <h2 class="section-title">Sobre mim</h2>
             <div class="about-me-content">
@@ -42,7 +44,7 @@
             </div>
         </div>
     </div>
-    <div class="section-container">
+    <div class="section-container" id="habilidades">
         <div class="section-content">
             <h2 class="section-title">Habilidades</h2>
             <div class="skills-content">
@@ -64,7 +66,7 @@
             </div>
         </div>
     </div>
-    <div class="section-container">
+    <div class="section-container" id="projetos">
         <div class="section-content">
             <h2 class="section-title">Projetos</h2>
             <div class="project-content">
@@ -103,7 +105,7 @@
             </div>
         </div>
     </div>
-    <div class="section-container">
+    <div class="section-container" id="contato">
         <div class="section-content">
             <h2 class="section-title">Entre em contato</h2>
             <form class="contact-form">
@@ -117,10 +119,10 @@
     <footer class="footer-container">
         <div class="social-items">
             <a href="mailto:giorgioeabarbosa@gmail.com"><i class="fa-regular fa-envelope fa-xl"></i></a>
-            <a href="https://linkedin.com " target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/giorgio-emmanuelton/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
         </div>
-        <p>Copiright 2024</p>
+        <p>Copyright 2024</p>
     </footer>
     
 </body>
